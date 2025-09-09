@@ -5,3 +5,4 @@ torchvision
 torchaudio
 websockets
 fastapi[standard]
+huggingface_hub
