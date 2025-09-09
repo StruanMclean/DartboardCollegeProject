@@ -1,0 +1,7 @@
+opencv-python
+pyyaml==5.1
+torch 
+torchvision 
+torchaudio
+websockets
+fastapi[standard]
