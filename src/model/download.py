@@ -1,5 +1,5 @@
 from typing import Tuple
-from huggingface_hub import hf_hub_download, snapshot_download
+from huggingface_hub import snapshot_download
 from pathlib import Path
 from helpers.logger import logger
 
