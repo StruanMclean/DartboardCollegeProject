@@ -79,7 +79,6 @@ async def websocket_endpoint(websocket: WebSocket):
                     "camera2_count": count2,
                     "camera1_scores": scores1_filtered,
                     "camera2_scores": scores2_filtered,
-                    "validation_method": "dual_camera_comparison"
                 }
                 
                 await websocket.send_json(response)
