@@ -4,7 +4,7 @@
 The url is bellow <br />
 [Project Url](https://huggingface.co/struan-mclean1/DartBoard/tree/main)
 
-# Project People
+# Cool Project People
 - Struan McLean
 - Callum Stewert
 - Cristian
