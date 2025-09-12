@@ -9,7 +9,9 @@ from helpers.filter import compare_duo_cam
 
 app = FastAPI()
 
-predicter = Predict()
+MODEL_LOADED, MODEL_DIR = download_model()
+
+predicter = Predict(str(MODEL_DIR))
 cam1 = Camera(0)
 cam2 = Camera(1)
 last_validated_scores = []
@@ -24,7 +26,6 @@ def get_dart_count_from_cameras() -> Tuple[int, int]:
         logger.error(f"Error getting dart counts: {e}")
         return 0, 0
 
-MODEL_LOADED: Tuple[bool, str] = download_model()
 
 @app.get("/")
 async def root():

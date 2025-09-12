@@ -4,7 +4,7 @@ from pathlib import Path
 from helpers.logger import logger
 
 def download_model() -> Tuple[bool, str]:
-    model_dir = Path("/tmp/model")
+    model_dir = Path("./tmp/model")
     model_dir.mkdir(parents=True, exist_ok=True)
     model = model_dir / "model_final.pth"
 
@@ -22,3 +22,6 @@ def download_model() -> Tuple[bool, str]:
     logger.info("Downloaded Model")
 
     return (True, model)
+
+if __name__ == "__main__":
+    download_model()

@@ -1,5 +1,5 @@
-
-from ast import List
+from typing import List
+#from ast import List
 import math
 from helpers.vect import Vector
 import time
